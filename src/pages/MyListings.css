@@ -1,0 +1,251 @@
+.my-listings-page {
+  min-height: calc(100vh - 80px);
+  background: #f6f7f9;
+  padding: 45px 20px 70px;
+}
+
+.my-listings-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.my-listings-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 18px;
+}
+
+.my-listings-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.my-listings-header h1 {
+  margin: 0;
+  font-size: 40px;
+  color: #111827;
+}
+
+.my-listings-header p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.my-listings-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-listings-add-btn:hover {
+  background: #000000;
+}
+
+.my-listings-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: #4f46e5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.my-listings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.my-listing-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  transition: 0.2s ease;
+}
+
+.my-listing-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.my-listing-image-wrapper {
+  position: relative;
+  height: 220px;
+  background: #eef2f7;
+}
+
+.my-listing-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.my-listing-status {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.my-listing-status.submitted {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.my-listing-status.draft {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.my-listing-content {
+  padding: 20px;
+}
+
+.my-listing-content h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.my-listing-variant {
+  margin: 6px 0 16px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.my-listing-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.my-listing-info span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+}
+
+.my-listing-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 14px;
+  border-top: 1px solid #eef2f7;
+}
+
+.my-listing-bottom strong {
+  font-size: 20px;
+  color: #111827;
+}
+
+.my-listing-bottom span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.my-listing-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.my-listing-actions button {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.my-listing-edit {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+}
+
+.my-listing-delete {
+  border: 1px solid #fecaca;
+  background: #fff5f5;
+  color: #dc2626;
+}
+
+.my-listings-empty {
+  padding: 70px 25px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.my-listings-empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.my-listings-empty h2 {
+  margin: 0 0 8px;
+  color: #111827;
+}
+
+.my-listings-empty p {
+  margin: 0 0 22px;
+  color: #64748b;
+}
+
+.my-listings-primary-btn {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .my-listings-page {
+    padding: 30px 15px 50px;
+  }
+
+  .my-listings-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .my-listings-header h1 {
+    font-size: 32px;
+  }
+
+  .my-listings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .my-listing-image-wrapper {
+    height: 200px;
+  }
+}

@@ -1,0 +1,457 @@
+/* =========================================================
+   VEHICLES PAGE
+========================================================= */
+
+.vehicles-page {
+  min-height: calc(100vh - 82px);
+  background: #f5f7fa;
+}
+
+.vehicles-page .page-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 55px 40px 70px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.vehicles-header {
+  margin-bottom: 28px;
+}
+
+.vehicles-header .section-label {
+  margin-bottom: 8px;
+}
+
+.vehicles-header .page-title {
+  margin-bottom: 8px;
+}
+
+.vehicles-header > div > p:last-child {
+  margin: 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+.vehicles-search-bar {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr
+    0.9fr
+    0.9fr
+    auto;
+
+  gap: 10px;
+
+  margin-bottom: 22px;
+
+  padding: 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.vehicles-search-bar input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 14px;
+}
+
+.vehicles-search-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.vehicles-search-bar input:focus {
+  border-color: #22d3ee;
+
+  box-shadow:
+    0 0 0 3px rgba(34, 211, 238, 0.12);
+}
+
+.vehicles-search-bar button {
+  height: 48px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.vehicles-search-bar button:hover {
+  background: #0891a8;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   MOBILE CONTROLS
+========================================================= */
+
+.vehicles-mobile-controls {
+  display: none;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.vehicles-layout {
+  display: grid;
+
+  grid-template-columns:
+    270px
+    minmax(0, 1fr);
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   RESULTS
+========================================================= */
+
+.vehicles-results {
+  min-width: 0;
+}
+
+.results-top {
+  min-height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+
+  padding: 0 2px;
+}
+
+.results-top > div {
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.results-top strong {
+  color: #111827;
+
+  font-size: 17px;
+}
+
+.results-top select {
+  min-width: 190px;
+
+  height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+.results-top select:focus {
+  border-color: #22d3ee;
+}
+
+/* =========================================================
+   SEARCH RESULT TAGS
+========================================================= */
+
+.search-result-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-left: 8px;
+
+  padding: 4px 9px;
+
+  border-radius: 20px;
+
+  background: #ecfeff;
+
+  color: #0e7490;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/* =========================================================
+   VEHICLE GRID
+========================================================= */
+
+.vehicles-results .vehicle-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.vehicles-results .empty-state {
+  padding: 75px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.empty-state-icon {
+  margin-bottom: 12px;
+
+  font-size: 48px;
+}
+
+.empty-state h2 {
+  margin-bottom: 7px;
+
+  font-size: 24px;
+
+  color: #111827;
+}
+
+.empty-state p {
+  margin-bottom: 22px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.vehicles-results .pagination {
+  margin-top: 30px;
+}
+
+/* =========================================================
+   FILTER SIDEBAR
+========================================================= */
+
+/*
+   This keeps the filter sidebar in the left column.
+   Your existing FilterSidebar styles can still provide
+   the inner appearance.
+*/
+
+.vehicles-layout > .filter-sidebar {
+  width: 100%;
+
+  position: sticky;
+
+  top: 100px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .vehicles-page .page-container {
+    padding: 45px 25px 60px;
+  }
+
+  .vehicles-search-bar {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .vehicles-search-bar button {
+    width: 100%;
+  }
+
+  .vehicles-layout {
+    grid-template-columns:
+      240px
+      minmax(0, 1fr);
+
+    gap: 18px;
+  }
+
+  .vehicles-results .vehicle-grid {
+    grid-template-columns:
+      1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .vehicles-page .page-container {
+    padding: 35px 15px 50px;
+  }
+
+  .vehicles-header {
+    margin-bottom: 22px;
+  }
+
+  .vehicles-header .page-title {
+    font-size: 34px;
+  }
+
+  .vehicles-search-bar {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    padding: 13px;
+  }
+
+  .vehicles-search-bar input,
+  .vehicles-search-bar button {
+    height: 48px;
+  }
+
+  .vehicles-mobile-controls {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+  }
+
+  .mobile-filter-btn {
+    height: 44px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-weight: 600;
+
+    cursor: pointer;
+  }
+
+  .vehicles-mobile-controls select {
+    flex: 1;
+
+    height: 44px;
+
+    padding: 0 10px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #111827;
+  }
+
+  .vehicles-layout {
+    display: block;
+  }
+
+  .vehicles-layout > .filter-sidebar {
+    position: static;
+  }
+
+  .vehicles-results .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .results-top {
+    min-height: auto;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    margin-bottom: 16px;
+  }
+
+  .results-top select {
+    display: none;
+  }
+
+  .search-result-tag {
+    margin-top: 5px;
+  }
+}
