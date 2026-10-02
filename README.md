@@ -39,32 +39,32 @@ npm run dev
 
 ### Home
 
-![Home](public/screenshots/home.png)
+![Home](screenshots/home.png)
 
 ### Vehicles
 
-![Vehicles](public/screenshots/vehicles.png)
+![Vehicles](screenshots/vehicles.png)
 
 ### Favorites
 
-![Favorites](public/screenshots/favorites.png)
+![Favorites](screenshots/favorites.png)
 
 ### Compare
 
-![Compare](public/screenshots/compare.png)
+![Compare](screenshots/compare.png)
 
 ### Sell Vehicle
 
-![Sell Vehicle](public/screenshots/sell-vehicle.png)
+![Sell Vehicle](screenshots/sell-vehicle.png)
 
 ### Login
 
-![Login](public/screenshots/login.png)
+![Login](screenshots/login.png)
 
 ### Register
 
-![Register](public/screenshots/register.png)
+![Register](screenshots/register.png)
 
 ### Dashboard
 
-![Dashboard](public/screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
